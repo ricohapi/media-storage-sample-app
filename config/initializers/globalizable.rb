@@ -1,0 +1,1 @@
+Globalizable.init

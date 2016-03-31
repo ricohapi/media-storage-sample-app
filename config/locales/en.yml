@@ -1,0 +1,36 @@
+en:
+  site:
+    title: Ricoh Storage API Sample
+    sub_title: Ricoh Storage API Sample Client in Ruby on Rails
+    copyright: 2016 Ricoh Company, Ltd. All Rights Reserved.
+  navi:
+    logout: Logout
+  top:
+    heading: Login with Ricoh ID
+    description: Your Ricoh ID & Password is exchanged with an OAuth Access Token for Ricoh Storage API in background.
+  images:
+    index:
+      heading: Uploaded Images
+      description:
+    show:
+      heading: Image Details
+      description:
+      delete: Delete
+  login_form:
+    label:
+      username: Username
+      password: Password
+      submit: Login
+    placeholder:
+      username: Ricoh ID Username
+      password: Ricoh ID Password
+  upload_form:
+    label:
+      file: JPEG file only
+      submit: Upload
+  tagging_form:
+    label:
+      tag: New Tag
+      submit: Add
+    placeholder:
+      tag:

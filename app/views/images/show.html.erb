@@ -1,0 +1,41 @@
+<section class="bs-docs-section">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="bs-component">
+        <h2><%= 'images.show.heading'.t %></h2>
+        <p class="lead"><%= 'images.show.description'.t %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bs-docs-section">
+  <div class="row">
+    <div class="col-md-8">
+      <%= image_tag image_content_path(@image[:id]) %>
+    </div>
+    <div class="col-md-4">
+      <pre><%= JSON.pretty_generate @image_meta %></pre>
+<%
+=begin
+%>
+      <ul>
+        <% @image_tags[:tags].each do |tag| %>
+          <li>#TAG</li>
+        <% end %>
+      </ul>
+      <%= render 'images/tagging_form' %>
+<%
+=end
+%>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <%= link_to image_path(@image[:id]), method: :delete do %>
+        <%= 'images.show.delete'.t %>
+        <%= material_icon.delete %>
+      <% end %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<div class="well bs-component"%>
+  <%= form_tag session_path, id: 'login_form' do %>
+    <fieldset class="form-horizontal">
+      <div class="form-group label-static">
+        <%= label_tag :username, 'login_form.label.username'.t, class: 'col-md-4 control-label' %>
+        <div class="col-md-8">
+          <%= text_field_tag :username, params[:username], class: 'form-control', placeholder: 'login_form.placeholder.username'.t %>
+        </div>
+      </div>
+
+      <div class="form-group label-static">
+        <%= label_tag :password, 'login_form.label.password'.t, class: 'col-md-4 control-label' %>
+        <div class="col-md-8">
+          <%= password_field_tag :password, params[:password], class: 'form-control', placeholder: 'login_form.placeholder.password'.t %>
+        </div>
+      </div>
+
+      <nav>
+        <%= submit_tag 'login_form.label.submit'.t, class: 'btn btn-primary' %>
+      </nav>
+    </fieldset>
+  <% end %>
+</div>

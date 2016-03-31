@@ -1,0 +1,15 @@
+<div class="bs-component"%>
+  <%= form_tag image_tags_path(@image[:id]), id: 'tagging_form' do %>
+    <fieldset class="form-horizontal">
+      <div class="form-group label-static is-fileinput">
+        <%= label_tag :tag, 'tagging_form.label.tag'.t, class: 'col-md-4 control-label' %>
+        <div class="col-md-8">
+          <%= text_field_tag :tag, params[:tag], class: 'form-control', placeholder: 'tagging_form.placeholder.tag'.t %>
+        </div>
+      </div>
+      <nav>
+        <%= submit_tag 'tagging_form.label.submit'.t, class: 'btn btn-primary' %>
+      </nav>
+    </fieldset>
+  <% end %>
+</div>

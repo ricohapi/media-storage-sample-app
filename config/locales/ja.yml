@@ -1,0 +1,36 @@
+ja:
+  site:
+    title: Ricoh Storage API Sample
+    sub_title: Ricoh Storage API を利用した Sample Rails App です。
+    copyright: 2016 Ricoh Company, Ltd. All Rights Reserved.
+  navi:
+    logout: ログアウト
+  top:
+    heading: Ricoh ID でログイン
+    description: DevCon 用に取得した Ricoh ID を入力すると、Backend で Storage API 用 OAuth Access Token を取得します。
+  images:
+    index:
+      heading: 画像一覧
+      description: これまでに Upload した画像のサムネイルを確認できます。
+    show:
+      heading: 画像詳細
+      description: オリジナル画像の確認やタグ付けが行えます。
+      delete: 削除
+  login_form:
+    label:
+      username: ユーザーネーム
+      password: パスワード
+      submit: ログイン
+    placeholder:
+      username: Ricoh ID のユーザーネーム
+      password: Ricoh ID パスワード
+  upload_form:
+    label:
+      file: JPEG ファイルのみ
+      submit: Upload
+  tagging_form:
+    label:
+      tag: 新規タグ
+      submit: Add
+    placeholder:
+      tag: 1つずつ付けてください。

@@ -1,0 +1,32 @@
+<section class="bs-docs-section">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="bs-component">
+        <h2><%= 'images.index.heading'.t %></h2>
+        <p class="lead"><%= 'images.index.description'.t %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bs-docs-section">
+  <% @images[:media].each_slice(3) do |media| %>
+    <div class="row">
+      <% media.each do |file| %>
+        <div class="col-md-4">
+          <%= link_to image_tag(image_content_path(file[:id]), class: 'thumbnail'), image_path(file[:id]) %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</section>
+
+<section class="bs-docs-section">
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+      <%= render 'images/upload_form' %>
+    </div>
+  </div>
+</section>
