@@ -53,7 +53,9 @@ and add `RICOH_OAUTH_CLIENT_ID` and `RICOH_OAUTH_CLIENT_SECRET` to the Heroku ap
 This rails app has no image data on local.  
 All media data are stored in the Ricoh Storage API.
 
-Ricoh-specific OAuth Client and Media Storage API Client code are released [as a rubygem](https://github.com/ricohapi/media-storage-rb).
+Ricoh-specific OAuth Client and Media Storage API Client code are released as rubygems.
+* [Ricoh OAuth Client Gem](https://github.com/ricohapi/auth-rb)
+* [Media Storage API Client Gem](https://github.com/ricohapi/media-storage-rb).
 
 Those Ricoh-specific client codes are called from models and controllers via these concerns.
 

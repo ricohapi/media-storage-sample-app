@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:ricohapi/auth-rb.git
-  revision: f177306ea9d682b8793f98b6d5a60916a7135298
+  revision: 14929d64173d9ff3cead86929764fd5008b50eb9
   specs:
-    ricohapi-oauth (0.1.0)
+    ricohapi-auth (0.1.0)
       rack-oauth2 (>= 1.3)
 
 GIT
@@ -189,8 +189,8 @@ DEPENDENCIES
   pg
   rack-oauth2
   rails (= 4.2.5.1)
+  ricohapi-auth!
   ricohapi-mstorage!
-  ricohapi-oauth!
   sass-rails (~> 5.0)
   spring
   sqlite3
