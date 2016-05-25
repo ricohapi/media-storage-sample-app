@@ -10,7 +10,7 @@ class ImagesController < ApplicationController
 
   def show
     @image = storage_api_client.info params[:id]
-    @image_meta = storage_api_client.inspect params[:id]
+    @image_meta = storage_api_client.meta params[:id]
     # @image_tags = storage_api_client.tags_on params[:id]
   end
 
