@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:nov/media-storage-rb.git
-  revision: 797595160005bbc30a994c2041a2d46552d210cb
+  revision: a08be0b1c14228d01ebac7a4852fc3ad78c12798
   specs:
     ricohapi-mstorage (1.0.1)
       ricohapi-auth (>= 0.1.0)
