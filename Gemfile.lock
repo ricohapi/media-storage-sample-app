@@ -1,13 +1,13 @@
 GIT
   remote: git@github.com:nov/media-storage-rb.git
-  revision: a08be0b1c14228d01ebac7a4852fc3ad78c12798
+  revision: 991d102c43530e207c7436378c41658689f47d53
   specs:
     ricohapi-mstorage (1.0.1)
       ricohapi-auth (>= 0.1.0)
 
 GIT
   remote: git@github.com:ricohapi/auth-rb.git
-  revision: 14929d64173d9ff3cead86929764fd5008b50eb9
+  revision: 144c1d1c3e23c657b32682ab062abd39f9bbf139
   specs:
     ricohapi-auth (0.1.0)
       rack-oauth2 (>= 1.3)

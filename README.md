@@ -27,7 +27,7 @@ $ bundle install
 $ bundle exec rake db:migrate
 ```
 
-Setup Ricoh OAuth Client Credentials via environmental variables (or modify `config/secrets.yml`).
+Setup Ricoh Auth Client Credentials via environmental variables (or modify `config/secrets.yml`).
 
 ```
 export RICOH_OAUTH_CLIENT_ID=<your-client-id>
@@ -53,8 +53,8 @@ and add `RICOH_OAUTH_CLIENT_ID` and `RICOH_OAUTH_CLIENT_SECRET` to the Heroku ap
 This rails app has no image data on local.  
 All media data are stored in the Ricoh Storage API.
 
-Ricoh-specific OAuth Client and Media Storage API Client code are released as rubygems.
-* [Ricoh OAuth Client Gem](https://github.com/ricohapi/auth-rb)
+Ricoh-specific Auth Client and Media Storage API Client code are released as rubygems.
+* [Ricoh Auth Client Gem](https://github.com/ricohapi/auth-rb)
 * [Media Storage API Client Gem](https://github.com/ricohapi/media-storage-rb).
 
 Those Ricoh-specific client codes are called from models and controllers via these concerns.
@@ -67,6 +67,6 @@ These controllers are accessing Media Storage API
 * app/controllers/images_controller.rb
 * app/controllers/image/contents_controller.rb
 
-and Account model is accessing Ricoh OAuth endpoints.
+and Account model is accessing Ricoh Auth endpoints.
 
 * app/models/account.rb
