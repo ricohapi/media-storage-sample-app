@@ -17,7 +17,7 @@ gem 'material_icons'
 gem 'rack-oauth2'
 gem 'json-jwt'
 
-gem 'ricohapi-mstorage'
+gem 'ricohapi-mstorage', '~> 2.0'
 
 group :development, :test do
   gem 'sqlite3'

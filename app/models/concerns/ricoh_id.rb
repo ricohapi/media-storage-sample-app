@@ -6,7 +6,7 @@ module Concerns
     extend ActiveSupport::Concern
 
     def ricoh_session
-      @ricoh_access_token ||= RicohAPI::OAuth::AccessToken.new access_token
+      @ricoh_access_token ||= RicohAPI::Auth::AccessToken.new access_token
     end
 
     def ricoh_session=(access_token)
@@ -21,7 +21,7 @@ module Concerns
 
     module ClassMethods
       def ricoh_oauth_client
-        RicohAPI::OAuth::Client.new(
+        RicohAPI::Auth::Client.new(
           Rails.application.secrets.ricoh_api['client_id'],
           Rails.application.secrets.ricoh_api['client_secret']
         )
