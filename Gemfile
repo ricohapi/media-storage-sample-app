@@ -17,8 +17,7 @@ gem 'material_icons'
 gem 'rack-oauth2'
 gem 'json-jwt'
 
-gem 'ricohapi-mstorage', git: 'git@github.com:nov/media-storage-rb.git'
-gem 'ricohapi-auth', git: 'git@github.com:ricohapi/auth-rb.git'
+gem 'ricohapi-mstorage', '~> 2.0'
 
 group :development, :test do
   gem 'sqlite3'
